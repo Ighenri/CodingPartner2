@@ -14,8 +14,19 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
 }
 
+#navbar a{
+    padding-right: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
 #welcome-section {
     height: 100vh;
     color: white;
@@ -29,6 +40,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding-bottom: 50px ;
+   
 }
 
 .project-title {
@@ -36,7 +48,7 @@ body {
     width: 410px;
     background: rgb(177, 172, 172);
     border: 5px brown solid;
-
+    margin: 0 1rem;
 }
 
 .project-title img {
@@ -58,4 +70,33 @@ body {
     font-size: 1.5rem;
     height: 1.5rem;
     color:white;
+}
+
+#contact{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+ 
+#contact img{
+    width: 40px;
+/*     padding-bottom: 1rem; */
+}
+
+
+@media (max-width: 600px) {
+    .project-title{
+        height: 350px;
+        width: 310px;
+       margin-bottom: 20px;
+    }
+
+    .project-title img{
+        width: 300px;
+    }
+
+    #projects{
+         flex-wrap: wrap;
+    }
 }
